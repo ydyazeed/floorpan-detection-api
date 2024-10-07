@@ -38,11 +38,11 @@ curl -X POST "http://localhost:8000/predict_image/" -F "file=@image4.png"
 ```
 
 
-### **Run Using Docker Image:**
+### **Run Using Docker Image(Recommended):**
 Start the FastAPI docker image:
 ```bash
 docker pull yazeed9895/floorplan-fastapi
-docker run -d -p 8000:8000 floorplan-fastapi
+docker run -d -p 8000:8000 yazeed9895/floorplan-fastapi
 ```
 Testing the FastAPI server:
 ```bash
