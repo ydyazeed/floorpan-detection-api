@@ -25,7 +25,7 @@
 
 ---
 
-## **How to Run the API and Test it Locally:**
+## **How to Run the API and Test it:**
 
 ### **Run Locally:**
 Start the FastAPI server:
@@ -36,6 +36,7 @@ Testing the FastAPI server:
 ```bash
 curl -X POST "http://localhost:8000/predict_image/" -F "file=@image4.png"
 ```
+
 
 ### **Run Using Docker Image:**
 Start the FastAPI docker image:
