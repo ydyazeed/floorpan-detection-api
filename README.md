@@ -31,6 +31,21 @@
 Start the FastAPI server:
 ```bash
 uvicorn app:app --host 0.0.0.0 --port 8000
+```
+Testing the FastAPI server:
+```bash
+curl -X POST "http://localhost:8000/predict_image/" -F "file=@image4.png"
+```
+
+### **Run Using Docker Image:**
+Start the FastAPI docker image:
+```bash
+docker run -d -p 8000:8000 floorplan-fastapi
+```
+Testing the FastAPI server:
+```bash
+curl -X POST "http://localhost:8000/predict_image/" -F "file=@image4.png"
+```
 
 
 
